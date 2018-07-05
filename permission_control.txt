@@ -4,11 +4,11 @@ SELECT:
 GRANT SELECT ON my_database.* TO 'yselect'@'%' IDENTIFIED BY 'your_random_password';
 FLUSH PRIVILEGES;
 
-SELECT INSERT:
+SELECT INSERT UPDATE:
 GRANT SELECT, INSERT ON my_database.* TO 'yinsert'@'%' IDENTIFIED BY 'your_random_password';
 FLUSH PRIVILEGES;
 
-SELECT INSERT DELETE:
+SELECT INSERT UPDATE DELETE:
 GRANT SELECT, INSERT, DELETE ON my_database.* TO 'ydelete'@'%' IDENTIFIED BY 'your_random_password';
 
 ALL, TRUNCATE included:
