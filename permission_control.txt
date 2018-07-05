@@ -1,0 +1,16 @@
+PERMISSION CLASSIFICATION:
+
+SELECT:
+GRANT SELECT ON my_database.* TO 'yselect'@'%' IDENTIFIED BY 'your_random_password';
+FLUSH PRIVILEGES;
+
+SELECT INSERT:
+GRANT SELECT, INSERT ON my_database.* TO 'yinsert'@'%' IDENTIFIED BY 'your_random_password';
+FLUSH PRIVILEGES;
+
+SELECT INSERT DELETE:
+GRANT SELECT, INSERT, DELETE ON my_database.* TO 'ydelete'@'%' IDENTIFIED BY 'your_random_password';
+
+ALL, TRUNCATE included:
+GRANT ALL ON my_database.* TO 'yroot'@'%' IDENTIFIED BY 'your_random_password';
+FLUSH PRIVILEGES;
